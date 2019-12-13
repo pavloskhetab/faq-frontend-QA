@@ -1,0 +1,262 @@
+.my{
+    width: 500px!important
+
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: sticky;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+.site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 68.4vh;
+  }
+
+  .backdrop-style{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1030;
+
+    /* Remove this background-color attribute if you want to get rid of the transparent grey backdrop */
+    background-color:rgba(0, 0, 0, 0.25);
+  }
+  ​
+  .overlay-title {
+    text-align: center;
+    position:relative;
+    font-size: 28px;
+  }
+  ​
+  /* Adjusted for occupancy form */
+  .modal-style {
+    /*Specific width for apartmentDetail css needs refactoring to be appropriate for other uses.*/
+    min-width: 70vw;
+    z-index: 1040;
+    /*Specific height for apartmentDetail css needs refactoring to be appropriate for other uses.*/
+    height: 680px;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*Removed max height and set a standard height for apartment detail issues*/
+    /* max-height: calc(100vh - 150px); */
+    overflow-y: auto;
+    transform: translate(-50%,-50%);
+    border: 1px solid #e5e5e5;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    margin: 0 auto;
+    /* Increased padding max height and set a standard height for apartment detail calendar issues */
+    padding: 75px;
+
+    /* Modify at discretion */
+    min-height: 50vh;
+  }
+  ​
+  .close-btn:hover {
+    background-color: #FFFFFF;
+    color:#004050;
+  }
+  ​
+  .close-btn{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    background-color: #004050;
+    border-radius: .5rem;
+    border: 1px solid;
+    position:relative;
+    font-size: 1 rem;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    position: absolute;
+    /* Left adjusted for occupancy form */
+    left: 51%;
+    margin-left: -50px;
+  }
+
+  ​
+  .x-btn:hover {
+    background-color: #FFFFFF;
+    color:#004050;
+  }
+  ​
+  .x-btn{
+    position:relative;
+    float:right;
+    top: -30px;
+  
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: #004050;
+    border-radius: .25rem;
+  }
+
+  i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .VoteUp {
+    margin-left:20px;
+     height:20px;
+      width:20px;
+       padding-right:0!important;
+        padding-left:0!important;
+         padding-top:0!important;
+  }
+
+  .VoteDown {
+    margin-left:5px;
+    margin-right:5px;
+     height:20px;
+      width:20px;
+       padding-right:0!important;
+        padding-left:0!important;
+         padding-top:0!important;
+  }
+  
+  .EditConfirm {
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: "red";
+  }
+  
+  
+.CommentBox {
+  margin-left: 50px;
+    padding-left:4px;
+     padding-right:4px;
+      padding-top:3px;
+    padding-bottom:3px;
+    background-color: #F1F1F1;
+    border: none;
+    resize: none;
+    width: 50%;
+    
+  
+}
+
+  .AnswerCommentSeparator{
+    max-width: 50%;
+     background-color: black;
+      
+  }
+
+  .EditButton {
+    height: 25px!important;
+     padding-top: 0!important;
+      margin-left: 15px;
+  }
+
+  .quick{
+    border-radius: 25px;
+  }
+
+  .CommentButton{
+    height: 25px!important;
+     padding-top: 0!important; 
+     margin-left: 20px!important;
+  }
+  
+  .FAQFooter {
+    background-color: #DFDFDF;
+     border-top: 2px solid;
+      border-bottom: 2px solid;
+       color: black;
+       position:relative;
+       bottom:-29px;
+       width:100%;
+       height:40px;   /* Height of the footer */
+  }
+
+  .fakebod{
+    padding:20px;
+   padding-bottom:60px;
+  }
+
+  .DeleteButton {
+    height: 25px!important;
+     padding-top: 0!important;
+     margin-left: 15px;
+  }
+
+  .EditAnswerText {
+    background-color: #EEEEEE;
+     height:50px; 
+     width:200px;
+  }
+
+  .AnswersSubheading {
+    margin-right: 40px;
+     margin-left: 40px;
+  }
+
+  .Separator {
+    max-width: 100%;
+     background-color: black;
+  }
+
+  .QuestionHeading {
+    background-color: #EEEEEE;
+     margin-left: 40px;
+      margin-right: 40px;
+  }
+
+  .QuestionSubheading {
+    margin-top: 45px;
+     margin-left: 10px;
+  }
+   
+  .FAQHeader {
+    background-color: #DFDFDF;
+     border-top: 2px solid;
+      border-bottom: 2px solid;
+       color: black;
+        padding-top: 0px;
+      padding-bottom: 0px;
+  }
+
+  .searchBarText{
+    margin-left:10px;
+    background:transparent;
+    border:0!important;
+  }
+
+  .searchButton{
+    border:0!important;
+     background-color: white;
+  }
+
+  .searchBar{
+    width: 250px!important;
+    border-radius: 25px!important;
+    background-color: white;
+  }
+
+ .hyperlinkText:hover {
+   text-decoration-line: underline;
+   cursor: pointer;
+ }
